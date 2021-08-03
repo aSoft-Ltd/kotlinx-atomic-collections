@@ -8,7 +8,7 @@ plugins {
 kotlin {
     jvm { library() }
     js(IR) { library() }
-    val nativeTargets = nativeTargets(true)
+    nativeTargets(true)
 
     sourceSets {
         val commonMain by getting {
@@ -25,3 +25,8 @@ kotlin {
         }
     }
 }
+
+aSoftOSSLibrary(
+    version = vers.asoft.collections,
+    description = "A Kotlin Multiplatform Mutable Collections that are thread safe"
+)

@@ -7,9 +7,8 @@ object vers {
     }
 
     object asoft {
-        val atomicfu = "0.0.10"
+        val collections = "0.0.10"
         val builders = "1.3.42"
         val expect = "0.0.41"
-        val test = "1.1.40"
     }
 }
