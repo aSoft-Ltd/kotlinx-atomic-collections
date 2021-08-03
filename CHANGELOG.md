@@ -6,7 +6,7 @@
 
 ## Build Src
 
-- Updated to gradle version 7.0.2
+- Updated to gradle version 7.1.1
 
 ## New Features
 
