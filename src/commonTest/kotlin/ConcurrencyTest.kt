@@ -1,4 +1,4 @@
-import expect.expect
+import expect.CollectionAssertion
 import kotlinx.atomic.collections.mutableAtomicListOf
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -12,6 +12,8 @@ class ConcurrencyTest {
     fun should_add_items_to_list() {
         numbers.add(1)
     }
+
+    private fun <E> expect(collection: Collection<E>) = CollectionAssertion(collection)
 
     @Test
     fun should_add_items_in_different_threads() = asyncTest {
